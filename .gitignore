@@ -1,0 +1,24 @@
+# OS/Editors
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+
+# Build/Archives
+/dist/
+/build/
+*.zip
+*.tar.gz
+
+# Env
+.env
+.env.*
+
+# Node (optional tooling)
+node_modules/
+.npm/
+
+# Misc
+*.swp
+.idea/
+.vscode/

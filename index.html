@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎉 ¡Feliz Cumpleaños! 🎂</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Playfair+Display:wght@700;900&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de Carga -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="love-progress">
+            <div class="love-hearts">
+                <span>💗</span><span>💗</span><span>💗</span>
+            </div>
+            <div class="love-bar"><div class="love-fill"></div></div>
+            <div class="loading-text">CARGANDO CON MUCHO AMOR</div>
+        </div>
+    </div>
+    
+    <!-- Página 1: Sobre -->
+    <div id="page1" class="page active">
+        <div class="envelope-container">
+            <h1 class="hero-title">PARA LA MUJER MAS HERMOSA DEL MUNDO</h1>
+            <div id="envelope" class="envoltura-sobre wiggle" aria-label="Carta rosada con sello de osito. Toca para abrir">
+                <div class="sobre"></div>
+                <div class="solapa solapa-superior"></div>
+                <div class="solapa solapa-derecha"></div>
+                <div class="solapa solapa-izquierda"></div>
+                <div class="seal-badge"><span class="seal-bear">🐻</span></div>
+                <div class="from-to from-to-inline"><span class="from">DE: <strong>CARLOS</strong></span><span class="sep"></span><span class="to">PARA: <strong>LINA</strong></span></div>
+            </div>
+            <div class="envelope-shadow"></div>
+        </div>
+    </div>
+
+    <!-- Página 2: Mensaje con imagen -->
+    <div id="page2" class="page parchment">
+        <div class="content-container">
+            <div class="text-section text-panel">
+                <h1 class="birthday-title">¡Feliz Cumpleaños Hermosa!</h1>
+                <div id="typewriter" class="typewriter" aria-live="polite"></div>
+            </div>
+            <div class="image-section">
+                <div class="decorative-frame">
+                    <img src="imagenes/3.jpeg" alt="Foto especial" class="hero-photo" />
+                    <div class="balloons">
+                        <span class="balloon">🎈</span>
+                       
+                    </div>
+                    <div class="sparkles">
+                        <span class="sparkle">✨</span>
+                        <span class="sparkle">✨</span>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="nav-footer">
+                <button class="next-btn" onclick="nextPage()">pag 2</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- Página 3: Mensaje final con efectos -->
+    <div id="page3" class="page parchment">
+        <div class="final-content">
+            <div class="floating-hearts">
+                <span class="heart">💖</span>
+                <span class="heart">💝</span>
+                <span class="heart">💕</span>
+                <span class="heart">💗</span>
+                <span class="heart">💓</span>
+            </div>
+            <div class="final-message text-panel">
+                <h2 class="final-title">¡Que todos tus sueños se hagan realidad!</h2>
+                <div id="typewriter3" class="typewriter" aria-live="polite"></div>
+            </div>
+            <div class="image-section">
+                <div class="decorative-frame">
+                    <img src="imagenes/2.jpeg" alt="Foto especial" class="hero-photo" />
+                    <div class="balloons">
+                        <span class="balloon">🎈</span>
+                    
+                    </div>
+                    <div class="sparkles">
+                        <span class="sparkle">✨</span>
+                        <span class="sparkle">✨</span>
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="celebration-animation">
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+                <div class="confetti"></div>
+            </div>
+            <div class="final-actions">
+                <button id="btn-back" class="next-btn">Volver a la carta</button>
+                <button id="btn-home" class="next-btn">Inicio</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <audio id="bg-music" src="cancion/tevoyamar.mp3" preload="auto" loop playsinline></audio>
+    <script src="script.js"></script>
+</body>
+</html>
